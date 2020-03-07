@@ -1,0 +1,11 @@
+Camaro Coupes red 4 160 null null false true Jun-7-2019 Dec-7-2018 123abc
+Mustang Coupes gray 4 180 null null true false May-7-2018 Apr-7-2019 567ef5
+Spark Hatchbacks white 4 180 null null true false May-7-2018 Apr-7-2019 567ef5
+Camaro Coupes red 4 160 null null true true Feb-17-2020 Dec-7-2018 123abc
+Mustang Coupes black 4 180 null null true false May-7-2018 Apr-7-2019 567ef5
+Spark Hatchbacks gray 4 180 null null true false May-7-2018 Apr-7-2019 567ef5
+Camaro Sedan red 4 160 null null false true Mar-2-2020 Dec-12-2019 456wed
+Volester Hatchbacks black 4 160 null null true true Jan-12-2020 Dec-12-2019 456wed
+Camaro Coupes blue 4 160 null null false true Jun-7-2019 Dec-7-2018 123abc
+Mustang Coupes gray 4 180 null null true false May-7-2018 Apr-7-2019 567ef5
+Spark Hatchbacks white 4 180 null null true false May-7-2018 Apr-7-2019 567ef5
