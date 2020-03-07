@@ -17,17 +17,7 @@ public class ImportTextFile {
 
 	private static List<Cars> richmanCars = new ArrayList<>();
 
-	public static void main(String[] args) throws FileNotFoundException, ParseException {
-
-		ImportTextFile importfile = new ImportTextFile();
-		importfile.richmanCollection();
-		CarReport report = new CarReport();
-		report.TypeOfCars();
-		report.colorOfCar();
-		report.oilChangedInLast30Days();
-	}
-
-	public List<Cars> richmanCollection() throws ParseException, FileNotFoundException {
+	public List<Cars> importRichmanCollection() throws ParseException, FileNotFoundException {
 
 		File file = new File(".//libs//cars.txt");
 		Scanner scan = new Scanner(file);
@@ -64,7 +54,7 @@ public class ImportTextFile {
 				}
 		}
 		scan.close();
-		return getRichmanCars();
+		return richmanCars;
 	}
 
 	public static List<Cars> getRichmanCars() {

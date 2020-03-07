@@ -19,7 +19,7 @@ public class CarReport {
 	
 	List<Cars> richmanCar = ImportTextFile.getRichmanCars();
 
-	public void TypeOfCars() throws FileNotFoundException, ParseException {
+	public void reportForTypeOfCars() throws FileNotFoundException, ParseException {
 
 		Map<String, Integer> carType = new HashMap<>();
 
@@ -37,7 +37,7 @@ public class CarReport {
 		}
 	}
 
-	public void colorOfCar() {
+	public void reportOnColorOfCar() {
 
 		List<String> carColor = new ArrayList<>();
 
@@ -53,7 +53,7 @@ public class CarReport {
 		}
 	}
 
-	public List<Cars> oilChangedInLast30Days() {
+	public List<Cars> reportForOilChangedInLast30Days() {
 
 		List<Cars> oilChangedinLast30Days = new ArrayList<>();
 		Date todayDate = new Date();
