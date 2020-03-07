@@ -15,11 +15,7 @@ import com.cerotid.JavaOOPS.cars.Cars;
 
 public class CarReport {
 
-	ImportTextFile importfile = new ImportTextFile();
-	
-	List<Cars> richmanCar = ImportTextFile.getRichmanCars();
-
-	public void reportForTypeOfCars() throws FileNotFoundException, ParseException {
+	public Map<String, Integer> reportForTypeOfCars(List<Cars> richmanCar) throws FileNotFoundException, ParseException {
 
 		Map<String, Integer> carType = new HashMap<>();
 
@@ -35,9 +31,10 @@ public class CarReport {
 		for (Map.Entry<String, Integer> entry : carType.entrySet()) {
 			System.out.println(entry.getKey() + " ==> " + entry.getValue());
 		}
+		return carType;
 	}
 
-	public void reportOnColorOfCar() {
+	public void reportOnColorOfCar(List<Cars> richmanCar) {
 
 		List<String> carColor = new ArrayList<>();
 
@@ -53,7 +50,7 @@ public class CarReport {
 		}
 	}
 
-	public List<Cars> reportForOilChangedInLast30Days() {
+	public List<Cars> reportForOilChangedInLast30Days(List<Cars> richmanCar) {
 
 		List<Cars> oilChangedinLast30Days = new ArrayList<>();
 		Date todayDate = new Date();
