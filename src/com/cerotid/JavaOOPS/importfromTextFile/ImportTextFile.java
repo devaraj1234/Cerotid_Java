@@ -25,7 +25,6 @@ public class ImportTextFile {
 		report.TypeOfCars();
 		report.colorOfCar();
 		report.oilChangedInLast30Days();
-
 	}
 
 	public List<Cars> richmanCollection() throws ParseException, FileNotFoundException {

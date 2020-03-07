@@ -16,6 +16,7 @@ import com.cerotid.JavaOOPS.cars.Cars;
 public class CarReport {
 
 	ImportTextFile importfile = new ImportTextFile();
+	
 	List<Cars> richmanCar = ImportTextFile.getRichmanCars();
 
 	public void TypeOfCars() throws FileNotFoundException, ParseException {
