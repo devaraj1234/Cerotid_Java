@@ -17,9 +17,10 @@ public class ImportTextFile {
 
 	private static List<Cars> richmanCars = new ArrayList<>();
 
-	public List<Cars> importRichmanCollection() throws ParseException, FileNotFoundException {
+	public List<Cars> importRichmanCollection(File file)
+			throws ParseException, FileNotFoundException, ArrayIndexOutOfBoundsException {
 
-		File file = new File(".//libs//cars.txt");
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(file);
 		SimpleDateFormat dtf = new SimpleDateFormat("MMM-dd-yyyy");
 
@@ -42,16 +43,13 @@ public class ImportTextFile {
 				Date lastOilChangeDate = dtf.parse(token[9]);
 				Date lastTireChangeDate = dtf.parse(token[10]);
 				String vin = token[11];
+
 				Cars rmCar = new Cars(carName, carType, color, doors, maxSpeed, tires, engine, hasAndroidAuto,
 						hasCarPlay, lastOilChangeDate, lastTireChangeDate, vin);
-				getRichmanCars().add(rmCar);
+				richmanCars.add(rmCar);
 			} else
-				try {
-					throw new Exception(
-							"values in cars.txt file doesnot match with the numbers of variables in programme");
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
+				throw new ArrayIndexOutOfBoundsException(
+						"values in cars.txt file doesnot match with the numbers of variables in programme");
 		}
 		scan.close();
 		return richmanCars;
